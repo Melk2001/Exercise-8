@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!-- The following lines are comments
+    Author: Melissa Kerins
+    Date Created: 10/1/2020
+    Page Description: Dreamweaver CC 2014
+    Modified 1/2/20  Updated footer to include-->
+
+<html lang="en"> <!--Declare the primary language for each web page-->
+    <head>
+    
+    <meta charset="utf-8" /> <!--8-bit character encoding capable of encoding all possible characters-->
+    <meta name="description" content="Contact form">
+    <meta name="keywords" content="Personal Information">
+    <meta name="author" content="Melissa Kerins">
+    <title>Form</title>
+    <link rel ="stylesheet" type="text/css" href="styles/styles.css"/>
+ </head>
+<body>
+    <header>
+        <p> Any queries or feedback please Complete and Submit (position relative 10px from top - center)</p>
+</header>
+    
+    <main>
+        
+    
+        
+        <section>
+          <h3> Please enter the following information: (form action=" http://year1.ccpdev.me/FormTest.php" method="get" or method="post")</h3>
+            
+            <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+                
+                <label for="first_name">First name:<span class="required">*</span></label>
+                
+                <input type="text" name="first_name" id="first_name" autofocus required><br>
+                <label for="last_name">Last name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label style="margin: 30px;" for="email">Email:<span class="required">*</span></label>
+                <input style="margin-left: -20px;" type="email" name="email" id="email" required placeholder="johndoe@example.com">
+                <br>
+                
+                <label style="margin: 20px;" for="gender">Gender :</label>
+                <input type="radio" id="gender" name="gender" value="male"> male
+                <input type="radio" class="gender" name="gender" value="female"> Female
+                <input type="radio" class="gender" name="gender" value="other" checked> Other <br>
+                
+                <label style="margin: 20px;" for="internet"> Heard of us:</label>
+                <fieldset>
+                <input type="checkbox" id="internet" name="internet" value="internet" checked> Internet <br>
+                <input type="checkbox" class="marginl" id="hear" name="paper" value="paper"> Newspaper <br>
+                <input type="checkbox" class="marginl" id="hear_1" name="friend" value="friend"> Friend <br>
+                <input type="checkbox" class="marginl" id="hear_2" name="Add" value="Add"> Others <br>
+               </fieldset>
+                <br>
+                <label class="query" for="message">Query :</label>   
+                    
+                <textarea style="margin-left: 50px; " cols="40" rows="6" id="message"  data-maxlength="200"></textarea> <br>
+                    
+                <input  type="Submit" name="Submit" id="button" value="Submit">
+                <input  type="reset" name="reset" id="reset">
+                    
+               
+            </form>
+            <p style="margin-left: 138px;"> <span class="required">*</span> <em> indicates a required field</em></p>
+            
+        </section>
+        
+      
+        
+    </main>
+    
+    
+     <footer>
+    <p> &copy;Copyright &#64;2019 using paragraph element starting with &lt;p&gt; tag</p>
+    </footer>
+   
+    
+    </body>         
+</html>
